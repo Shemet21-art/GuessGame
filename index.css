@@ -1,0 +1,151 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+img,
+p,
+input {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  padding: 40px 10px;
+  border: 2px solid;
+  border-color: rgb(14, 59, 92);
+  border-radius: 5px;
+  background-color: rgba(153, 159, 207, 0.55);
+  -webkit-box-shadow: 1px 15px 14px 5px rgba(32, 111, 172, 0.2);
+  -moz-box-shadow: 1px 15px 14px 5px rgba(32, 111, 172, 0.2);
+  box-shadow: 1px 15px 14px 5px rgba(32, 111, 172, 0.2);
+}
+
+#helperText {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#result {
+  position: absolute;
+  bottom: 10px;
+}
+
+#inputWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#input {
+  margin-bottom: 20px;
+}
+
+.true {
+  color: rgb(12, 184, 12);
+}
+
+.restartGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: chartreuse;
+  font-size: 32px;
+}
+
+#btnReset {
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.looser {
+  color: red;
+}
+
+.looser #btnReset {
+  background-color: red;
+  color: black;
+  box-shadow: rgba(221, 15, 15, 0.35) 0 -25px 18px -14px inset,
+    rgba(221, 15, 15, 0.25) 0 1px 2px, rgba(221, 15, 15, 0.25) 0 2px 4px,
+    rgba(221, 15, 15, 0.25) 0 4px 8px, rgba(221, 15, 15, 0.25) 0 8px 16px,
+    rgba(221, 15, 15, 0.25) 0 16px 32px;
+}
+
+.win {
+  color: chartreuse;
+}
+
+.win #btnReset {
+  background-color: chartreuse;
+  color: green;
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+}
+
+#btnReset:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.false {
+  color: red;
+}
+
+#failContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#failContainer img {
+  margin-right: 5px;
+  width: 40px;
+}
+
+#failCotainer img:last-child {
+  background: red;
+}
+
+input {
+  border-radius: 10px;
+  border: rgb(14, 59, 92) solid 2px;
+  width: 50%;
+  padding: 10px;
+}
